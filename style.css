@@ -1,0 +1,107 @@
+body{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #000;
+    cursor: crosshair; 
+    font-family: Arial, sans-serif;
+}
+
+p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.header{
+    top: 42%;
+
+    padding: 20px 0;
+}
+
+.disable-selection{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+h1{
+    font-size: 2.5rem;
+    position: relative;
+}
+
+h1::after{
+    content:'3D city';
+    font-size: 12px;
+    position: absolute;
+    top: 3px;
+    padding-left: 5px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+body.fade-in {
+    animation: fadeIn 3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+#contact-me-button:hover {
+    background-color: rgb(30, 5, 255);
+    color: black;
+}
+
+#projects-textbox {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+
+#about-me-textbox {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+#contact-me-textbox{
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+#contact-me-textbox a, #projects-textbox a, #about-me-textbox a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact-me-textbox a:hover, #projects-textbox a:hover, #about-me-textbox a:hover {
+    color: #aaa;
+}
